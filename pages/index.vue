@@ -17,7 +17,6 @@
 
 <script setup>
 import { ref, watch } from 'vue';
-const route = useRoute();
 const search = ref('')
 let data = await useFetchList();
 const page = ref(1)
