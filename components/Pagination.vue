@@ -1,5 +1,5 @@
 <template>
-    <ul class="flex flex-row gap-4 flex-wrap justify-center col-span-full items-center">
+    <ul class="flex flex-row gap-4 flex-wrap justify-center col-span-full items-center" v-if="totalPages > 0">
         <template v-for="page in visiblePages" :key="page">
             <li class="cursor-pointer" :class="{ 'font-bold text-indigo-600': page === curPage }" @click="setPage(page)">
                 <span>{{ page }}</span>
