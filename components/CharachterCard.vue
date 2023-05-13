@@ -1,6 +1,6 @@
 <template>
     <nuxt-link :to="`/charachter/${charachter.id}`" class="flex flex-col gap-3">
-        <nuxt-img :src="`${charachter.thumbnail.path}.${charachter.thumbnail.extension}`"
+        <nuxt-img format="webp" loading="lazy" :src="`${charachter.thumbnail.path}.${charachter.thumbnail.extension}`"
             class="aspect-video object-cover rounded-md shadow-lg" :alt="charachter.name" />
         <h2 class="font-medium text-indigo-900">
             {{ charachter.name }}
