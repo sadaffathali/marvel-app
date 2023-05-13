@@ -1,42 +1,45 @@
-# Nuxt 3 Minimal Starter
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Description 
+This is a Nuxt3 app that displays a list of Marvel characters. The app is built using the [Marvel API](https://developer.marvel.com/)
 
-## Setup
+# 
 
-Make sure to install the dependencies:
+To use this application, simply run the following commands:
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`
+## Usage
 
 ```bash
-npm run dev
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
 ```
 
-## Production
 
-Build the application for production:
+## Features 
+- List of Marvel characters
+- Ability to filter characters by name
+- Ability to view character details
+- Dynamic Pagination
+- Uses lazy loading for country images [Document](https://web.dev/browser-level-image-lazy-loading/) and uses Nuxt-img module
+- Uses TailwindCss
+- Includes a Dockerfile for easy deployment
+- 
 
+
+
+## Deployment
+To deploy this application using Docker, you can use the included Dockerfile. Simply run the following commands:
 ```bash
-npm run build
+$ docker build -t alibaba-task .
+$ docker run -p 3000:3000 alibaba-task
 ```
 
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
