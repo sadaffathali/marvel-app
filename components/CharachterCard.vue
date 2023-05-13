@@ -1,11 +1,11 @@
 <template>
-    <div class="flex flex-col gap-3">
-        <img :src="`${props.charachter.thumbnail.path}.${props.charachter.thumbnail.extension}`"
-            class="aspect-video object-cover" />
+    <nuxt-link :to="`charachter/${charachter.id}`" class="flex flex-col gap-3">
+        <nuxt-img :src="`${charachter.thumbnail.path}.${charachter.thumbnail.extension}`" class="aspect-video object-cover"
+            :alt="charachter.name" />
         <h2 class="font-medium text-indigo-900">
-            {{ props.charachter.name }}
+            {{ charachter.name }}
         </h2>
-    </div>
+    </nuxt-link>
 </template>
 
 <script setup lang="ts">
@@ -13,6 +13,7 @@
 interface CharacterProps {
     charachter: {
         name: string;
+        id: Number | String,
         thumbnail: {
             path: string;
             extension: string;
@@ -20,5 +21,5 @@ interface CharacterProps {
     };
 }
 
-const props = defineProps<CharacterProps>();
+const { charachter } = defineProps<CharacterProps>();
 </script>
