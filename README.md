@@ -2,7 +2,17 @@
 ## Description 
 This is a Nuxt3 app that displays a list of Marvel characters. The app is built using the [Marvel API](https://developer.marvel.com/)
 
-# 
+## Features 
+- List of Marvel characters
+- Ability to filter characters by name
+- Ability to view character details
+- Dynamic Pagination
+- Uses lazy loading for country images [Document](https://web.dev/browser-level-image-lazy-loading/) and uses Nuxt-img module
+- Uses TailwindCss
+- Includes a Dockerfile for easy deployment
+
+
+#
 
 To use this application, simply run the following commands:
 
@@ -23,16 +33,6 @@ $ yarn start
 $ yarn generate
 ```
 
-
-## Features 
-- List of Marvel characters
-- Ability to filter characters by name
-- Ability to view character details
-- Dynamic Pagination
-- Uses lazy loading for country images [Document](https://web.dev/browser-level-image-lazy-loading/) and uses Nuxt-img module
-- Uses TailwindCss
-- Includes a Dockerfile for easy deployment
-- 
 
 
 
