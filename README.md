@@ -7,7 +7,7 @@ This is a Nuxt3 app that displays a list of Marvel characters. The app is built 
 - Ability to filter characters by name
 - Ability to view character details
 - Dynamic Pagination
-- Uses lazy loading for country images [Document](https://web.dev/browser-level-image-lazy-loading/) and uses Nuxt-img module
+- Uses lazy loading for charachter images [Document](https://web.dev/browser-level-image-lazy-loading/) and uses Nuxt-img module
 - Uses TailwindCss
 - Includes a Dockerfile for easy deployment
 
