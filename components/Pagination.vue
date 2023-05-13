@@ -12,7 +12,7 @@
     </ul>
 </template>
 <script setup>
-import { computed, ref, defineProps, defineEmits, defineExpose } from 'vue'
+import { computed, ref, defineEmits } from 'vue'
 
 const emit = defineEmits(['update'])
 
