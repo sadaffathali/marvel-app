@@ -39,7 +39,7 @@ $ yarn generate
 ## Deployment
 To deploy this application using Docker, you can use the included Dockerfile. Simply run the following commands:
 ```bash
-$ docker build -t alibaba-task .
-$ docker run -p 3000:3000 alibaba-task
+$ docker build -t marvel-app .
+$ docker run -p 3000:3000 marvel-app
 ```
 
