@@ -1,5 +1,5 @@
 <template>
-    <CharachterDetail title="Description">
+    <CharachterDetail title="Description" v-if="data.description">
         {{ data.description }}
     </CharachterDetail>
     <CharachterDetail title="Comics">
