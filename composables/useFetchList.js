@@ -1,8 +1,11 @@
-export default async (payload) => {
-  const { publicKey } = useUtils();
+import { useProductStore } from "/stores/state";
 
-  const { ts } = useUtils();
-  const { hash } = useUtils();
+export default async (payload) => {
+  const store = useProductStore();
+  const publicKey = store.publicKey;
+
+  const ts = store.ts;
+  const hash = store.hash;
 
   const apiUrl = `https://gateway.marvel.com/v1/public/characters?ts=${ts}&apikey=${publicKey}&hash=${hash}${
     payload !== undefined && payload.page ? "&offset=" + payload.page * 20 : ""

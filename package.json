@@ -22,6 +22,8 @@
   },
   "dependencies": {
     "@nuxt/image": "^0.7.1",
-    "crypto-js": "^4.1.1"
+    "@pinia/nuxt": "^0.4.10",
+    "crypto-js": "^4.1.1",
+    "pinia": "^2.0.36"
   }
 }
