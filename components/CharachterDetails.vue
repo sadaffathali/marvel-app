@@ -22,6 +22,7 @@
 
 interface CharacterData {
     description: string;
+    name: string;
     comics: {
         items: {
             name: string;
@@ -39,4 +40,8 @@ const props = defineProps<{
 }>();
 
 const { data } = props;
+
+useHead({
+    title: data.name,
+})
 </script>

@@ -31,5 +31,7 @@ watch(search, async (query) => {
 
     data = await useFetchList({ name: query.toLowerCase() });
 })
-
+useHead({
+    title: "Marvel App",
+})
 </script>
